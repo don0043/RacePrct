@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 import java.util.List;
 
@@ -26,6 +27,7 @@ public class Road extends JPanel implements ActionListener,Runnable {
 
     public Road(){
         mainTimer.start();
+        enemiesFactory.start();
         addKeyListener(new MyKeyAdapter());
         setFocusable(true);
     }
@@ -46,10 +48,23 @@ public class Road extends JPanel implements ActionListener,Runnable {
         g.drawImage(p.img, p.x, p.y, null);
 
 
+        Iterator<Enemy> i = enemies.iterator();
+        while(i.hasNext()){
+            Enemy e = i.next();
+            if (e.x >= 2400 || e.x <= -2400){
+                i.remove();
+            }else{
+                e.move();
+            g.drawImage(e.img, e.x, e.y, null);
+            }
+        }
+
+
     }
     public void actionPerformed(ActionEvent e){
         p.move();
         repaint();
+        System.out.println(enemies.size());
         }
         public void run(){
         while (true){
