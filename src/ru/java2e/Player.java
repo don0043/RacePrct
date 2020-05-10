@@ -12,6 +12,12 @@ public class Player {
 
     Image img = new ImageIcon("res/player.png").getImage();
 
+    public Rectangle getRect(){
+
+
+        return new Rectangle(x, y, 200, 90);
+    }
+
     int v = 0;
     int dv = 0;
     int s = 0;

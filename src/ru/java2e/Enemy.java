@@ -11,6 +11,13 @@ public class Enemy {
     Image img = new ImageIcon("res/enemy.png").getImage();
     Road road;
 
+    public Rectangle getRect(){
+
+
+        return new Rectangle(x, y, 200, 90);
+    }
+
+
 
     public Enemy(int x, int y, int v, Road road){
         this.x = x;
