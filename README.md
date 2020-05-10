@@ -1,4 +1,6 @@
 # Race Game!
+![alt text](https://github.com/don0043/RacePrct/blob/master/other/race.jpg)
+
 Simple Java game 
 
 You just go ahead and try to dodge the enemies
