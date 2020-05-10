@@ -1,11 +1,11 @@
 # Race Game!
 ![alt text](https://github.com/don0043/RacePrct/blob/master/other/race.jpg)
 
-#Simple Java game 
+Simple Java game 
 
 
-#You just go ahead and try to dodge the enemies
+You just go ahead and try to dodge the enemies
 
-#You control the car using arrow keys!
+You control the car using arrow keys!
 
-#You can get more information in wiki!
+You can get more information in wiki!
